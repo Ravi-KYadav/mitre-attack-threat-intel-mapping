@@ -1,62 +1,36 @@
 # MITRE ATT&CK Threat Intelligence Mapping
 
-Mapping of observed attacker behaviors and simulated incident scenarios to the MITRE ATT&CK framework, with reference documentation linking tactics/techniques to detection and mitigation strategies.
+**SOC Analyst L1 Portfolio Project · Threat Intelligence & Adversary TTPs**
 
-## 🎯 Objective
+> **Status: Active / mapping library being expanded**
 
-To build fluency in the framework SOC teams use as a common language for describing attacker behavior — moving from "something bad happened" to "this is Initial Access via T1566 Phishing, followed by T1059 Command and Scripting Interpreter."
+## Objective
+Build fluency with MITRE ATT&CK as a common language for describing attacker behavior and connecting TTPs to detection data sources and mitigations.
 
-## 🧰 Reference Framework
+## Mapping Workflow
 
-- [MITRE ATT&CK Enterprise Matrix](https://attack.mitre.org/matrices/enterprise/)
+1. Select an incident scenario or threat-actor behavior set.
+2. Break the activity into discrete attacker actions.
+3. Map each action to the appropriate ATT&CK tactic and technique/sub-technique.
+4. Identify useful detection data sources.
+5. Document relevant mitigations and defensive controls.
+6. Explain the reasoning behind each mapping.
 
-## 🔧 Methodology
+## Mapping Standard
 
-1. **Scenario Selection**
-   - Selected incident scenarios from *<!-- e.g. LetsDefend/CyberDefenders cases, or a constructed attack chain -->*
-2. **Behavior Identification**
-   - Broke down each scenario into discrete attacker actions (e.g. initial foothold, lateral movement, exfiltration)
-3. **ATT&CK Mapping**
-   - Mapped each identified behavior to its corresponding Tactic (e.g. Initial Access, Execution, Persistence) and Technique/Sub-technique ID
-4. **Detection & Mitigation Research**
-   - For each mapped technique, documented relevant data sources for detection (e.g. process creation logs, network traffic) and applicable mitigations from MITRE's guidance
-
-## 📋 Mapping Table
-
-| Scenario | Tactic | Technique (ID) | Detection Data Source | Mitigation |
+| Scenario | Tactic | Technique | Detection Source | Mitigation |
 |---|---|---|---|---|
-| *<!-- e.g. Phishing → PowerShell execution -->* | Initial Access | Phishing (T1566) | Email gateway logs | User training, attachment sandboxing |
-| *<!-- e.g. same scenario, next stage -->* | Execution | Command and Scripting Interpreter: PowerShell (T1059.001) | Process creation logs, PowerShell logging | Script block logging, constrained language mode |
-| *<!-- add more rows for each scenario you mapped -->* | | | | |
+| Phishing / Initial Access | Initial Access | T1566 | Email/security gateway logs | User training, filtering, sandboxing |
+| PowerShell Execution | Execution | T1059.001 | Process + PowerShell logs | Script Block Logging, application controls |
 
-*<!-- Replace with your actual mapped scenarios -->*
+## SOC Skills Demonstrated
 
-## 🔍 Example: Full Attack Chain Mapping
+MITRE ATT&CK · threat intelligence · TTP mapping · detection data sources · mitigation research · adversary behavior analysis
 
-*<!-- Pick one scenario and walk it end-to-end as a worked example -->*
+## Evidence Roadmap
 
-**Scenario:** *<!-- brief description -->*
+The repository is being expanded with completed scenario mappings, screenshots and analyst notes. Mappings will be evidence-backed rather than generic technique lists.
 
-```
-Initial Access (T1566)
-   → Execution (T1059.001)
-      → Persistence (T10XX)
-         → ...
-```
+## Scope & Ethics
 
-**Notes:** *<!-- why each stage maps to that technique, and what a defender would look for at each stage -->*
-
-## 🧠 Skills Demonstrated
-
-- Applying the MITRE ATT&CK framework to real/simulated incidents
-- Translating raw attacker behavior into structured threat intelligence
-- Understanding detection data sources per technique
-- Connecting technique-level knowledge to actionable mitigations
-
-## 📚 What I Learned
-
-*<!-- 3-4 sentences: which tactic category was hardest to map correctly, how this changed the way you read incident reports, why a shared framework like ATT&CK matters for SOC communication -->*
-
-## 🔗 Related
-
-Part of a 5-project SOC Analyst portfolio. See also: [SOC Alert Triage Practice](https://github.com/Ravi-KYadav/soc-alert-triage-practice) · [Network Traffic Analysis](https://github.com/Ravi-KYadav/network-traffic-analysis-wireshark-suricata)
+Educational threat-intelligence research using public or authorized material.
