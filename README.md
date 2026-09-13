@@ -7,31 +7,29 @@
 ### 🧰 Stack
 <img src="https://img.shields.io/badge/MITRE_ATT%26CK-000000?logo=mitreattack&logoColor=white" alt="MITRE ATT&CK"> <img src="https://img.shields.io/badge/Threat_Intelligence-555555" alt="Threat Intelligence"> <img src="https://img.shields.io/badge/TTP-Mapping-555555" alt="TTP Mapping">
 
-## 🎯 Why I built this lab
-To become comfortable using MITRE ATT&CK as a common language for describing attacker behaviour and connecting TTPs to detection data sources and mitigations.
+## 🎯 Objective
+Use MITRE ATT&CK as a common language for describing attacker behaviour and connecting TTPs to evidence, detection data sources and mitigations.
+
+## 🗺️ Repository map
+
+| Path | Purpose |
+|---|---|
+| [`docs/01-mapping-standard.md`](docs/01-mapping-standard.md) | Repeatable ATT&CK mapping method |
+| [`cases/`](cases/) | Scenario mappings and reusable mapping template |
+| [`evidence/`](evidence/) | Evidence and source-quality standard |
 
 ## 🔎 Mapping workflow
 
-1. Select an incident scenario or threat-actor behaviour set.
-2. Break the activity into discrete attacker actions.
-3. Map each action to the appropriate ATT&CK tactic and technique/sub-technique.
-4. Identify useful detection data sources.
-5. Document relevant mitigations and defensive controls.
-6. Explain the reasoning behind each mapping.
+1. **Define** the incident or threat-actor scenario.
+2. **Decompose** activity into discrete attacker actions.
+3. **Map** actions to tactics and techniques/sub-techniques.
+4. **Support** every mapping with evidence.
+5. **Identify** useful detection data sources.
+6. **Map** relevant mitigations and defensive controls.
+7. **Explain** confidence and reasoning.
 
-## 🗂️ Mapping standard
-
-| Scenario | Tactic | Technique | Detection source | Mitigation |
-|---|---|---|---|---|
-| Phishing / Initial Access | Initial Access | T1566 | Email/security gateway logs | User training, filtering, sandboxing |
-| PowerShell Execution | Execution | T1059.001 | Process + PowerShell logs | Script Block Logging, application controls |
-
-## 🧠 What I'm practising
+## 🧠 Skills being practised
 **MITRE ATT&CK • threat intelligence • TTP mapping • detection data sources • mitigation research • adversary behaviour analysis**
 
-## 📌 Evidence roadmap
-
-The repository is being expanded with completed scenario mappings, screenshots and analyst notes. Mappings will be evidence-backed rather than generic technique lists.
-
 ## Scope & ethics
-Educational threat-intelligence research using public or authorised material.
+Educational threat-intelligence research using public or authorised material. Sensitive information is sanitised before publication.
